@@ -1,0 +1,26 @@
+﻿@model CalculatorAppMVC.Models.Calculator
+
+@{
+    ViewData["Title"] = " Hesap Makinesi Sayfası ";
+}
+<form asp-action="Index">
+    <div class="text-center">
+        <h1 class="display-6">Hoşgeldiniz</h1>
+        <p><label> 1.sayı : </label></p>
+        <p><input type="number" asp-for="value1" /></p>
+        <p><label> 2.sayı : </label></p>
+        <p><input type="number" asp-for="value2" /></p>
+
+        <p><input type="submit" value="Topla" asp-for="calculate" /></p>
+
+        <p><input type="submit" value="Çıkar" asp-for="calculate" /></p>
+
+        <p><input type="submit" value="Çarp" asp-for="calculate" /></p>
+
+        <p><input type="submit" value="Böl" asp-for="calculate" /></p>
+
+        <p> <a href="/Home/SonucSayfası/"> Sonucu Görmek İçin Tıklayınız </a></p>
+
+
+    </div>
+</form> 

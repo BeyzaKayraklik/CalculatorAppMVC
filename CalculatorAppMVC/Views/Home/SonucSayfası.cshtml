@@ -1,0 +1,11 @@
+﻿@model CalculatorAppMVC.Models.Calculator
+
+@{
+    ViewData["Title"] = " Sonuc Sayfası";
+}
+<form asp-action="SonucSayfası">
+    <h2> Sonucunuz: </h2>
+
+    @TempData["result"];
+
+</form>
